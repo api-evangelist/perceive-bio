@@ -1,8 +1,25 @@
 aid: perceive-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/perceive-bio.png
 name: Perceive Bio
-description: 'Perceive Bio is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Perceive Bio is a clinical-stage biotechnology company based in South San
+  Francisco, California, that translates protective biology into therapies for retinal
+  degeneration and vision loss. Its pipeline targets dry age-related macular degeneration
+  (AMD) and neuroprotection with differentiated targets grounded in deep genetic insights,
+  aiming to prevent irreversible blindness. Backed by GV (Google Ventures). Perceive Bio
+  is a therapeutics company with no public API, developer portal, or programmatic surface;
+  this profile was run through the enrichment pipeline and no API artifacts were found to
+  harvest. Contact: info@perceivebio.com.'
 url: https://raw.githubusercontent.com/api-evangelist/perceive-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Ophthalmology
+- Therapeutics
+- Retinal Degeneration
+- Drug Development
+- Neuroprotection
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/perceive-bio-domain-security.yml
 - type: Website
   url: https://perceivebio.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
